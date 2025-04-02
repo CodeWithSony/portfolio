@@ -395,10 +395,10 @@
 
                         <!-- back card -->
                         <div class="absolute  z-10 inset-0 bg-white  dark:bg-black dark:text-gray-300  px-10 py-8 rounded-md  "
-                            id="tribloopBlock">
+                            id="tribloopBlockk">
                             <div class="flex"></div>
                             <h1 class="text-2xl font-medium dark:text-indigo-500"> Accomplishments <span
-                                    onclick="hideBlock('tribeloop')">
+                                    onclick="hideBlock('tribeloopp')">
                                     <ion-icon class="text-2xl hover:text-blue-600 cursor-pointer float-right mt-1"
                                         name="close">close</ion-icon>
                                 </span> </h1>
@@ -419,9 +419,7 @@
                                     <li class="mb-2">
                                         Became familiar with <strong>JWT</strong>  authentication, <strong>middleware</strong>, <strong>tokens</strong> and <strong>controller</strong> functions.
                                     </li>
-                                    <li class="mb-2">
-                                        Worked on <strong>fronted backend database flow</strong>.
-                                    </li>
+                               
                                 
     
                                 </ul>
@@ -429,7 +427,7 @@
                         
 
                         <div class="px-1" >
-                            <img width="350px" id="tribloopImg" loading="lazy" onclick="showAcomBlock('tibleloop')" src="./images/work/inventory.jpg"
+                            <img width="350px" id="tribloopImg" loading="lazy" onclick="showAcomBlock('tibleloopp')" src="./images/work/inventory.jpg"
                             alt="" class="object-contain  cursor-pointer rounded-md w-full h-95" />
 
                         </div>
@@ -1097,6 +1095,11 @@
 
             switch (blockId) {
 
+                case "tibleloopp":
+                    var tribloopBlockk = document.getElementById("tribloopBlockk");
+                    tribloopBlockk.style.display = "block";
+                    break;
+
                 case "tibleloop":
                     // code block
                     console.log("first");
@@ -1143,6 +1146,11 @@
         function hideBlock(blockId) {
 
             switch (blockId) {
+
+                case "tribeloopp":
+                    var tribloopBlockk = document.getElementById("tribloopBlockk");
+                    tribloopBlockk.style.display = "none";
+                    break;
 
                 case "tribeloop":
                     var tribloopBlock = document.getElementById("tribloopBlock");
